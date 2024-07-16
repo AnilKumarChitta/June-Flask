@@ -13,7 +13,7 @@ RUN pip3 install -r requirements.txt
 COPY . .
 
 # Set the environment variable for Flask
-ENV FLASK_APP=JuneFlask.py
+ENV FLASK_APP=app.py
 
 # Command to run the Flask app
 CMD ["python3", "-m", "flask", "run", "--host=0.0.0.0"]
